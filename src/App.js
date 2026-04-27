@@ -331,7 +331,6 @@ export default function App() {
             ) : (
               visibleEntries.map((entry, i) => {
                 const fish  = getFishById(entry.fishId);
-                const score = getScore(entry);
                 const rank  = i + 1;
                 const badge = getRankStyle(rank);
                 const shark = isSharkId(entry.fishId);
@@ -345,7 +344,6 @@ export default function App() {
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontSize: 15, fontWeight: 600, color: "#e6f3fb", marginBottom: 2 }}>{entry.angler}</div>
                         <div style={{ fontSize: 11, color: "#3d6878", letterSpacing: 0.3 }}>{shark?"🦈":"🎣"} {fish?.name} · {entry.date}</div>
-                        <div style={{ height: 2, borderRadius: 2, marginTop: 6, background: `linear-gradient(90deg,${shark?"#a03030":"#1a7ea0"} ${Math.min(score,100)}%,rgba(25,65,95,.3) ${Math.min(score,100)}%)` }} />
                       </div>
                       <div style={{ marginLeft: "auto", textAlign: "right", flexShrink: 0 }}>
                         <div style={{ fontSize: 20, fontWeight: 700, color: shark?SHARK:BLUE }}>{entry.measurement} cm</div>
@@ -436,7 +434,6 @@ export default function App() {
         {/* ══ RESULT ══ */}
         {view === "result" && submitted && (() => {
           const fish  = getFishById(submitted.entry.fishId);
-          const score = getScore(submitted.entry);
           const shark = isSharkId(submitted.entry.fishId);
           const badge = getRankStyle(submitted.rank);
           return (
