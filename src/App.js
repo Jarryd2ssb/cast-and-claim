@@ -7,41 +7,41 @@ const FISH_CATEGORIES = [
   {
     category: "Coastal & Reef Fish",
     fish: [
-      { id: "galjoen",         name: "Galjoen",                      record: 55,  desc: "South Africa's national fish. Deep-bodied with dark silver scales, found along rocky surf-beaten shorelines. A prized shore-angling target." },
-      { id: "kob",             name: "Kob (Kabeljou)",               record: 120, desc: "The iconic Eastern Cape gamefish. Silvery with a slightly bronze sheen, large mouth, and a drum-like swim bladder. Hard-fighting and excellent eating." },
-      { id: "leervis",         name: "Leervis (Garrick)",            record: 130, desc: "A sleek silver pelagic predator with a deeply forked tail and long body. One of the EC's most explosive sport fish — makes blistering runs." },
-      { id: "shad",            name: "Shad (Elf)",                   record: 65,  desc: "A voracious schooling predator with a blue-green back and silver belly, sharp teeth, and forked tail. Attacks lures and bait with aggression." },
-      { id: "musselcracker",   name: "Musselcracker (Poenskop)",     record: 90,  desc: "Powerfully built with a blunt head and crushing molar-like teeth for cracking molluscs. Dark grey-brown body, legendary rock-and-surf species." },
-      { id: "blacktail",       name: "Blacktail (Dassie)",           record: 45,  desc: "A popular light-tackle species with a silver body, distinct black tail fin, and faint lateral stripes. Abundant in estuaries and rocky reefs." },
-      { id: "steenbras",       name: "Red Steenbras",                record: 110, desc: "A large, reddish-bronze sparid with a steep forehead and robust body. Now protected — a slow-growing species and indicator of reef health." },
-      { id: "catface",         name: "Catface Rockcod",              record: 80,  desc: "A chunky grouper with brown and white mottled markings, a wide mouth, and fan-like pectoral fins. Common on rocky reefs around Port Elizabeth." },
-      { id: "spotted_grunter", name: "Spotted Grunter",              record: 75,  desc: "A silver estuary fish covered in dark spots with a downward-pointing mouth adapted for rooting in sand. Tails in shallow flats like a bonefish." },
-      { id: "white_stumpnose", name: "White Stumpnose",              record: 50,  desc: "A blunt-nosed silver reef fish with faint yellow tinges and dark-edged scales. Prized for table quality and plentiful around EC reefs." },
-      { id: "roman",           name: "Roman (Red Roman)",            record: 60,  desc: "Brilliantly coloured — deep red and pink body with blue-green markings around the face. One of the most colourful reef fish in the EC." },
-      { id: "bronze_bream",    name: "Bronze Bream",                 record: 55,  desc: "A deep-bodied bronze-silver fish with a small mouth and large scales. Very common in the surf zone over sandy beaches of the EC." },
-      { id: "kingfish",        name: "Giant Kingfish (GT)",          record: 150, desc: "A powerful silver trevally with a steep forehead, deeply forked tail, and golden-yellow fin tips. The ocean's apex ambush predator." },
-      { id: "cape_salmon",     name: "Cape Salmon (Geelbek)",        record: 115, desc: "A long-jawed silver fish with a distinctive yellow mouth interior, large eyes, and streamlined body. Explosive feeder during the sardine run." },
-      { id: "baardman",        name: "Baardman (Bellman)",           record: 85,  desc: "A robust silver-grey surf fish with prominent chin barbels (beard), large scales, and a subterminal mouth. Powerful fighter on bait." },
-      { id: "wildeperd",       name: "Wildeperd (Zebra)",            record: 45,  desc: "Distinctively marked with vertical dark stripes on a silver body — exactly like its namesake. A colourful and plentiful reef species." },
+      { id: "galjoen",         name: "Galjoen",                      record: 55,  legal: 35,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Dichistius_capensis_1.jpg/640px-Dichistius_capensis_1.jpg",         desc: "South Africa's national fish. Deep-bodied with dark silver scales, found along rocky surf-beaten shorelines. A prized shore-angling target." },
+      { id: "kob",             name: "Kob (Kabeljou)",               record: 120, legal: 60,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Argyrosomus_japonicus.jpg/640px-Argyrosomus_japonicus.jpg",          desc: "The iconic Eastern Cape gamefish. Silvery with a slightly bronze sheen, large mouth, and a drum-like swim bladder. Hard-fighting and excellent eating." },
+      { id: "leervis",         name: "Leervis (Garrick)",            record: 130, legal: 70,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Lichia_amia_1.jpg/640px-Lichia_amia_1.jpg",                         desc: "A sleek silver pelagic predator with a deeply forked tail and long body. One of the EC's most explosive sport fish — makes blistering runs." },
+      { id: "shad",            name: "Shad (Elf)",                   record: 65,  legal: 30,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bluefish_Pomatomus_saltatrix.jpg/640px-Bluefish_Pomatomus_saltatrix.jpg", desc: "A voracious schooling predator with a blue-green back and silver belly, sharp teeth, and forked tail. Attacks lures and bait with aggression." },
+      { id: "musselcracker",   name: "Musselcracker (Poenskop)",     record: 90,  legal: 50,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sparodon_durbanensis.jpg/640px-Sparodon_durbanensis.jpg",             desc: "Powerfully built with a blunt head and crushing molar-like teeth for cracking molluscs. Dark grey-brown body, legendary rock-and-surf species." },
+      { id: "blacktail",       name: "Blacktail (Dassie)",           record: 45,  legal: 20,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Diplodus_sargus_sargus.jpg/640px-Diplodus_sargus_sargus.jpg",         desc: "A popular light-tackle species with a silver body, distinct black tail fin, and faint lateral stripes. Abundant in estuaries and rocky reefs." },
+      { id: "steenbras",       name: "Red Steenbras",                record: 110, legal: "PROTECTED", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Petrus_rupestris.jpg/640px-Petrus_rupestris.jpg",                     desc: "A large, reddish-bronze sparid with a steep forehead and robust body. Now protected — a slow-growing species and indicator of reef health." },
+      { id: "catface",         name: "Catface Rockcod",              record: 80,  legal: 50,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Epinephelus_andersoni.jpg/640px-Epinephelus_andersoni.jpg",            desc: "A chunky grouper with brown and white mottled markings, a wide mouth, and fan-like pectoral fins. Common on rocky reefs around Port Elizabeth." },
+      { id: "spotted_grunter", name: "Spotted Grunter",              record: 75,  legal: 40,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pomadasys_commersonnii.jpg/640px-Pomadasys_commersonnii.jpg",          desc: "A silver estuary fish covered in dark spots with a downward-pointing mouth adapted for rooting in sand. Tails in shallow flats like a bonefish." },
+      { id: "white_stumpnose", name: "White Stumpnose",              record: 50,  legal: 25,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rhabdosargus_globiceps.jpg/640px-Rhabdosargus_globiceps.jpg",          desc: "A blunt-nosed silver reef fish with faint yellow tinges and dark-edged scales. Prized for table quality and plentiful around EC reefs." },
+      { id: "roman",           name: "Roman (Red Roman)",            record: 60,  legal: 30,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Chrysoblephus_laticeps.jpg/640px-Chrysoblephus_laticeps.jpg",          desc: "Brilliantly coloured — deep red and pink body with blue-green markings around the face. One of the most colourful reef fish in the EC." },
+      { id: "bronze_bream",    name: "Bronze Bream",                 record: 55,  legal: 30,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Pachymetopon_grande.jpg/640px-Pachymetopon_grande.jpg",                desc: "A deep-bodied bronze-silver fish with a small mouth and large scales. Very common in the surf zone over sandy beaches of the EC." },
+      { id: "kingfish",        name: "Giant Kingfish (GT)",          record: 150, legal: null,       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Caranx_ignobilis.jpg/640px-Caranx_ignobilis.jpg",                     desc: "A powerful silver trevally with a steep forehead, deeply forked tail, and golden-yellow fin tips. The ocean's apex ambush predator." },
+      { id: "cape_salmon",     name: "Cape Salmon (Geelbek)",        record: 115, legal: 60,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Atractoscion_aequidens.jpg/640px-Atractoscion_aequidens.jpg",          desc: "A long-jawed silver fish with a distinctive yellow mouth interior, large eyes, and streamlined body. Explosive feeder during the sardine run." },
+      { id: "baardman",        name: "Baardman (Bellman)",           record: 85,  legal: 40,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Umbrina_robinsoni.jpg/640px-Umbrina_robinsoni.jpg",                   desc: "A robust silver-grey surf fish with prominent chin barbels (beard), large scales, and a subterminal mouth. Powerful fighter on bait." },
+      { id: "wildeperd",       name: "Wildeperd (Zebra)",            record: 45,  legal: 30,         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Diplodus_cervinus.jpg/640px-Diplodus_cervinus.jpg",                   desc: "Distinctively marked with vertical dark stripes on a silver body — exactly like its namesake. A colourful and plentiful reef species." },
     ],
   },
   {
     category: "Sharks",
     fish: [
-      { id: "bronze_whaler",      name: "Bronze Whaler Shark",             record: 295, desc: "The #1 shore-angling shark in the EC. Bronze-copper colouring on the back, white belly, slender body with a pointed snout. Patrol the surf at Jeffreys Bay in large numbers." },
-      { id: "ragged_tooth",       name: "Ragged-Tooth Shark (Raggie)",     record: 320, desc: "Grey-brown with dark spots, a portly body, and a terrifying grin of protruding needle-like teeth. Resident in Algoa Bay's reefs year-round. Docile to divers despite appearances." },
-      { id: "bull_shark",         name: "Bull Shark",                      record: 340, desc: "Stocky and grey with a blunt snout, small eyes, and no markings. One of the most aggressive shark species — dominates deeper EC channels." },
-      { id: "great_white",        name: "Great White Shark",               record: 600, desc: "The apex predator. Counter-shaded with a dark grey dorsal surface and white belly, torpedo-shaped body and massive serrated triangular teeth. Resident in Algoa Bay." },
-      { id: "smooth_hammerhead",  name: "Smooth Hammerhead Shark",         record: 400, desc: "Grey-brown with the unmistakable hammer-shaped head (cephalofoil) with a smooth front edge. Most frequently sighted hammerhead in Algoa Bay." },
-      { id: "mako_shortfin",      name: "Shortfin Mako Shark",             record: 400, desc: "Iridescent metallic blue on the back, white below. Slender, torpedo-shaped with a pointed conical snout and crescent-shaped tail. The fastest shark alive." },
-      { id: "blue_shark",         name: "Blue Shark",                      record: 380, desc: "Slender and elegant with a deep indigo-blue back, bright blue sides, and white belly. Very long pectoral fins. Pelagic wanderer encountered offshore in EC deep water." },
-      { id: "tope_shark",         name: "Tope Shark (Vaalhaai)",           record: 195, desc: "A slender, grey-brown houndshark with a pointed snout and large eyes. Known locally as Vaalhaai. Caught inshore and on shallow EC reefs." },
-      { id: "spotted_gully",      name: "Spotted Gully Shark (Sweet William)", record: 170, desc: "Bronze-grey body covered in distinctive black spots, a blunt rounded snout and large rounded fins. Common in EC gullies and rocky reef shallows." },
-      { id: "sevengill",          name: "Broadnose Sevengill Shark",       record: 290, desc: "A primitive, broad-headed shark with seven gill slits (most sharks have five), a single dorsal fin set far back, and a silver-grey body with dark spots." },
-      { id: "puffadder_shyshark", name: "Puffadder Shyshark",             record: 60,  desc: "A small, slender catshark endemic to South Africa. Strikingly patterned with dark saddle-like bands and reddish-orange blotches on a cream body." },
-      { id: "pyjama_shark",       name: "Pyjama Shark",                    record: 107, desc: "Named for its bold longitudinal brown stripes on a cream body. A nocturnal catshark that hides in reef crevices by day along the southern EC coast." },
-      { id: "leopard_catshark",   name: "Leopard Catshark",                record: 84,  desc: "A beautifully marked catshark with intricate dark spots and rosette patterns on a pale background — true to its leopard name. Docile bottom-dweller." },
-      { id: "african_angelshark", name: "African Angelshark",              record: 150, desc: "A flattened, ray-like shark with enormous pectoral fins spread wide, mottled sandy-brown colouring for camouflage, and a flat head. Lies buried in sand." },
+      { id: "bronze_whaler",      name: "Bronze Whaler Shark",                 record: 295, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Carcharhinus_brachyurus.jpg/640px-Carcharhinus_brachyurus.jpg",           desc: "The #1 shore-angling shark in the EC. Bronze-copper colouring on the back, white belly, slender body with a pointed snout. Patrol the surf at Jeffreys Bay in large numbers." },
+      { id: "ragged_tooth",       name: "Ragged-Tooth Shark (Raggie)",         record: 320, legal: "PROTECTED",  img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Carcharias_taurus_georgia_aquarium.jpg/640px-Carcharias_taurus_georgia_aquarium.jpg", desc: "Grey-brown with dark spots, a portly body, and a terrifying grin of protruding needle-like teeth. Resident in Algoa Bay's reefs year-round. Docile to divers despite appearances." },
+      { id: "bull_shark",         name: "Bull Shark",                          record: 340, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Bull_shark.jpg/640px-Bull_shark.jpg",                                       desc: "Stocky and grey with a blunt snout, small eyes, and no markings. One of the most aggressive shark species — dominates deeper EC channels." },
+      { id: "great_white",        name: "Great White Shark",                   record: 600, legal: "PROTECTED",  img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/640px-White_shark.jpg",                                       desc: "The apex predator. Counter-shaded with a dark grey dorsal surface and white belly, torpedo-shaped body and massive serrated triangular teeth. Resident in Algoa Bay." },
+      { id: "smooth_hammerhead",  name: "Smooth Hammerhead Shark",             record: 400, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sphyrna_zygaena.jpg/640px-Sphyrna_zygaena.jpg",                             desc: "Grey-brown with the unmistakable hammer-shaped head (cephalofoil) with a smooth front edge. Most frequently sighted hammerhead in Algoa Bay." },
+      { id: "mako_shortfin",      name: "Shortfin Mako Shark",                 record: 400, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Isurus_oxyrinchus.jpg/640px-Isurus_oxyrinchus.jpg",                          desc: "Iridescent metallic blue on the back, white below. Slender, torpedo-shaped with a pointed conical snout and crescent-shaped tail. The fastest shark alive." },
+      { id: "blue_shark",         name: "Blue Shark",                          record: 380, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Blue_shark_2.jpg/640px-Blue_shark_2.jpg",                                     desc: "Slender and elegant with a deep indigo-blue back, bright blue sides, and white belly. Very long pectoral fins. Pelagic wanderer encountered offshore in EC deep water." },
+      { id: "tope_shark",         name: "Tope Shark (Vaalhaai)",               record: 195, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Galeorhinus_galeus.jpg/640px-Galeorhinus_galeus.jpg",                         desc: "A slender, grey-brown houndshark with a pointed snout and large eyes. Known locally as Vaalhaai. Caught inshore and on shallow EC reefs." },
+      { id: "spotted_gully",      name: "Spotted Gully Shark (Sweet William)", record: 170, legal: "PROTECTED",  img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Triakis_megalopterus.jpg/640px-Triakis_megalopterus.jpg",                     desc: "Bronze-grey body covered in distinctive black spots, a blunt rounded snout and large rounded fins. Common in EC gullies and rocky reef shallows." },
+      { id: "sevengill",          name: "Broadnose Sevengill Shark",           record: 290, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Notorynchus_cepedianus.jpg/640px-Notorynchus_cepedianus.jpg",                 desc: "A primitive, broad-headed shark with seven gill slits (most sharks have five), a single dorsal fin set far back, and a silver-grey body with dark spots." },
+      { id: "puffadder_shyshark", name: "Puffadder Shyshark",                 record: 60,  legal: "PROTECTED",  img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Haploblepharus_edwardsii.jpg/640px-Haploblepharus_edwardsii.jpg",             desc: "A small, slender catshark endemic to South Africa. Strikingly patterned with dark saddle-like bands and reddish-orange blotches on a cream body." },
+      { id: "pyjama_shark",       name: "Pyjama Shark",                        record: 107, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Poroderma_africanum.jpg/640px-Poroderma_africanum.jpg",                       desc: "Named for its bold longitudinal brown stripes on a cream body. A nocturnal catshark that hides in reef crevices by day along the southern EC coast." },
+      { id: "leopard_catshark",   name: "Leopard Catshark",                    record: 84,  legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Poroderma_pantherinum.jpg/640px-Poroderma_pantherinum.jpg",                   desc: "A beautifully marked catshark with intricate dark spots and rosette patterns on a pale background — true to its leopard name. Docile bottom-dweller." },
+      { id: "african_angelshark", name: "African Angelshark",                  record: 150, legal: null,        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Squatina_africana.jpg/640px-Squatina_africana.jpg",                           desc: "A flattened, ray-like shark with enormous pectoral fins spread wide, mottled sandy-brown colouring for camouflage, and a flat head. Lies buried in sand." },
     ],
   },
 ];
@@ -70,63 +70,11 @@ function saveEntries(arr) {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch {}
 }
 
-/* ── AI-generated Species Illustration ── */
-async function generateSpeciesIllustration(fish, isShark) {
-  const prompt = `You are a scientific marine illustration renderer. Output ONLY a complete SVG element (starting with <svg and ending with </svg>) — no markdown, no code fences, no explanation.
-
-Create a detailed, beautiful scientific illustration of a ${fish.name} (${isShark ? "shark" : "fish"}) found in the Eastern Cape waters of South Africa.
-
-Description to base the illustration on: ${fish.desc}
-
-Requirements:
-- SVG viewBox="0 0 480 300"
-- Rich ocean background: deep gradient from dark navy (#041824) at top to slightly lighter deep blue (#0a3040) at bottom. Add subtle caustic light ripple effects with semi-transparent ellipses.
-- Draw the fish/shark in accurate scientific profile view (side-on), centered, taking up 60-70% of the canvas width.
-- Use anatomically correct body shape, fin placement, and proportions based on the description.
-- Apply realistic colouration with gradients matching the description (e.g. counter-shading: darker dorsal, lighter ventral).
-- Add fine details: scale texture via subtle pattern, eye with highlight, gill line, lateral line.
-- Include small environmental details: a few subtle bubbles, distant reef silhouette or sandy bottom gradient at base.
-- Add the species name in elegant white serif text (font-family: Georgia, serif) at bottom left, font-size 13, with a subtle dark drop-shadow.
-- Add "EC Record: ${fish.record}cm" in smaller text (font-size 10) below the name in a muted blue-grey (#7EB8C9).
-- Overall mood: deep ocean, scientific yet beautiful. No labels pointing to body parts. No border or frame.`;
-
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
-      max_tokens: 4000,
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-
-  const data = await response.json();
-  const text = data.content?.map(b => b.text || "").join("") || "";
-  // Extract SVG
-  const svgMatch = text.match(/<svg[\s\S]*<\/svg>/i);
-  return svgMatch ? svgMatch[0] : null;
-}
-
 /* ── Species Modal ── */
 function SpeciesModal({ fish, onClose }) {
-  const [svgContent, setSvgContent] = useState(null);
-  const [loading, setLoading]       = useState(true);
-  const [error, setError]           = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError]   = useState(false);
   const shark = isSharkId(fish.id);
-
-  useEffect(() => {
-    let cancelled = false;
-    setLoading(true); setError(false); setSvgContent(null);
-    generateSpeciesIllustration(fish, shark)
-      .then(svg => {
-        if (cancelled) return;
-        if (svg) setSvgContent(svg);
-        else setError(true);
-      })
-      .catch(() => { if (!cancelled) setError(true); })
-      .finally(() => { if (!cancelled) setLoading(false); });
-    return () => { cancelled = true; };
-  }, [fish.id, fish, shark]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div
@@ -146,65 +94,48 @@ function SpeciesModal({ fish, onClose }) {
           border: `1px solid ${shark ? "rgba(200,80,80,0.4)" : "rgba(40,110,150,0.5)"}`,
           borderRadius: 12, maxWidth: 500, width: "100%",
           overflow: "hidden",
-          boxShadow: shark
-            ? "0 30px 80px rgba(180,40,40,0.3)"
-            : "0 30px 80px rgba(0,80,130,0.4)",
+          boxShadow: shark ? "0 30px 80px rgba(180,40,40,0.3)" : "0 30px 80px rgba(0,80,130,0.4)",
           animation: "slideUp 0.25s cubic-bezier(0.16,1,0.3,1)",
         }}
       >
-        {/* Illustration area */}
+        {/* Image area */}
         <div style={{
           position: "relative", height: 260,
           background: "linear-gradient(180deg,#041824 0%,#0a3040 100%)",
           overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center",
         }}>
-          {loading && (
+          {!imgLoaded && !imgError && (
             <div style={{ textAlign: "center" }}>
-              <div style={{ marginBottom: 14 }}>
-                <span style={{ fontSize: 36 }}>{shark ? "🦈" : "🐟"}</span>
-              </div>
-              <div style={{ fontSize: 11, color: "#3a7a90", letterSpacing: 3, textTransform: "uppercase" }}>
-                Generating illustration…
-              </div>
-              <div style={{ fontSize: 10, color: "#1d4a5c", marginTop: 6, letterSpacing: 1 }}>
-                Powered by Claude AI
-              </div>
-              {/* Animated dots */}
-              <div style={{ marginTop: 16, display: "flex", gap: 6, justifyContent: "center" }}>
-                {[0,1,2].map(i => (
-                  <div key={i} style={{
-                    width: 6, height: 6, borderRadius: "50%",
-                    background: shark ? "#a05050" : "#1a6a8a",
-                    animation: `pulse 1.2s ease-in-out ${i*0.2}s infinite`,
-                  }} />
-                ))}
-              </div>
+              <span style={{ fontSize: 36 }}>{shark ? "🦈" : "🐟"}</span>
+              <div style={{ fontSize: 11, color: "#3a7a90", letterSpacing: 3, textTransform: "uppercase", marginTop: 12 }}>Loading…</div>
             </div>
           )}
-
-          {!loading && error && (
-            <div style={{ textAlign: "center", padding: 20 }}>
-              <div style={{ fontSize: 48, marginBottom: 10 }}>{shark ? "🦈" : "🐟"}</div>
-              <div style={{ fontSize: 11, color: "#2d5a6a", letterSpacing: 2 }}>Illustration unavailable</div>
+          {imgError && (
+            <div style={{ textAlign: "center" }}>
+              <span style={{ fontSize: 48 }}>{shark ? "🦈" : "🐟"}</span>
+              <div style={{ fontSize: 11, color: "#2d5a6a", letterSpacing: 2, marginTop: 10 }}>Image unavailable</div>
             </div>
           )}
-
-          {!loading && svgContent && (
-            <div
-              style={{ width: "100%", height: "100%", display: "flex", alignItems: "center" }}
-              dangerouslySetInnerHTML={{ __html: svgContent }}
-            />
-          )}
-
+          <img
+            src={fish.img}
+            alt={fish.name}
+            onLoad={() => setImgLoaded(true)}
+            onError={() => setImgError(true)}
+            style={{
+              width: "100%", height: "100%", objectFit: "cover",
+              opacity: imgLoaded ? 1 : 0, transition: "opacity 0.4s",
+              position: "absolute", inset: 0,
+            }}
+          />
+          {/* Gradient overlay */}
+          <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 80, background: "linear-gradient(transparent,#081e30)" }} />
           {/* Close button */}
           <button onClick={onClose} style={{
-            position: "absolute", top: 12, right: 12,
-            width: 30, height: 30, borderRadius: "50%",
+            position: "absolute", top: 12, right: 12, width: 30, height: 30, borderRadius: "50%",
             background: "rgba(5,20,35,0.8)", border: "1px solid rgba(255,255,255,0.1)",
             color: "#7EB8C9", fontSize: 16, cursor: "pointer",
             display: "flex", alignItems: "center", justifyContent: "center",
           }}>×</button>
-
           {/* Category pill */}
           <div style={{
             position: "absolute", top: 12, left: 12, padding: "3px 10px", borderRadius: 20,
@@ -217,21 +148,22 @@ function SpeciesModal({ fish, onClose }) {
 
         {/* Info */}
         <div style={{ padding: "20px 24px 26px" }}>
-          <div style={{ fontSize: 21, fontWeight: 700, color: "#fff", marginBottom: 3, fontFamily: "Georgia,serif" }}>
-            {fish.name}
+          <div style={{ fontSize: 21, fontWeight: 700, color: "#fff", marginBottom: 10, fontFamily: "Georgia,serif" }}>{fish.name}</div>
+          <div style={{ display: "flex", gap: 10, marginBottom: 14, flexWrap: "wrap" }}>
+            <div style={{ padding: "5px 12px", borderRadius: 6, background: "rgba(4,18,30,0.6)", border: "1px solid rgba(25,75,105,0.5)" }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "#2d5a6a", marginBottom: 2 }}>EC Record</div>
+              <div style={{ fontSize: 15, fontWeight: 700, color: shark ? "#e07070" : "#7EB8C9" }}>{fish.record} cm</div>
+            </div>
+            <div style={{ padding: "5px 12px", borderRadius: 6, background: "rgba(4,18,30,0.6)", border: fish.legal === "PROTECTED" ? "1px solid rgba(200,80,80,0.4)" : "1px solid rgba(25,75,105,0.5)" }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "#2d5a6a", marginBottom: 2 }}>Legal Keep Size</div>
+              <div style={{ fontSize: 15, fontWeight: 700, color: fish.legal === "PROTECTED" ? "#e07070" : fish.legal === null ? "#4a8090" : "#7EB8C9" }}>
+                {fish.legal === "PROTECTED" ? "⛔ Protected" : fish.legal === null ? "No minimum" : `${fish.legal} cm`}
+              </div>
+            </div>
           </div>
-          <div style={{ fontSize: 10, letterSpacing: 3, textTransform: "uppercase", color: shark ? "#a06060" : "#3d6878", marginBottom: 12 }}>
-            EC Record: {fish.record} cm
-          </div>
-          <div style={{ fontSize: 13, color: "#7a9fb0", lineHeight: 1.75, fontFamily: "Georgia,serif" }}>
-            {fish.desc}
-          </div>
-          <div style={{
-            marginTop: 14, paddingTop: 12,
-            borderTop: "1px solid rgba(25,65,95,0.5)",
-            fontSize: 9, color: "#1a3d50", letterSpacing: 1.5,
-          }}>
-            AI-generated scientific illustration · Tap outside to close
+          <div style={{ fontSize: 13, color: "#7a9fb0", lineHeight: 1.75, fontFamily: "Georgia,serif" }}>{fish.desc}</div>
+          <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid rgba(25,65,95,0.5)", fontSize: 9, color: "#1a3d50", letterSpacing: 1.5 }}>
+            Image via Wikimedia Commons · Size limits per DFFE regulations · Tap outside to close
           </div>
         </div>
       </div>
@@ -245,7 +177,7 @@ export default function App() {
   const [entries,      setEntries]      = useState(loadEntries);
   const [filterCat,    setFilterCat]    = useState("all");
   const [filterFish,   setFilterFish]   = useState("all");
-  const [form,         setForm]         = useState({ angler: "", fishId: "", measurement: "", location: "" });
+  const [form,         setForm]         = useState({ angler: "", fishId: "", measurement: "" });
   const [photoData,    setPhotoData]    = useState(null);
   const [photoName,    setPhotoName]    = useState("");
   const [submitted,    setSubmitted]    = useState(null);
@@ -288,14 +220,13 @@ export default function App() {
       id: Date.now(), angler: form.angler.trim(), fishId: form.fishId,
       measurement: parseFloat(form.measurement),
       date: new Date().toISOString().slice(0, 10),
-      location: form.location.trim() || "Eastern Cape",
       photo: photoData || null,
     };
     const next = [...entries, entry];
     persist(next);
     const rank = [...next].sort((a, b) => getScore(b) - getScore(a)).findIndex(e => e.id === entry.id) + 1;
     setSubmitted({ entry, rank });
-    setForm({ angler: "", fishId: "", measurement: "", location: "" });
+    setForm({ angler: "", fishId: "", measurement: "" });
     clearPhoto();
     setView("result");
   }
@@ -413,12 +344,11 @@ export default function App() {
                       <div style={{ width: 38, height: 38, borderRadius: "50%", flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: rank<=3?20:12, fontWeight: 700, color: badge.color, background: "rgba(4,18,30,.55)", border: `1px solid ${badge.color}30` }}>{badge.label}</div>
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontSize: 15, fontWeight: 600, color: "#e6f3fb", marginBottom: 2 }}>{entry.angler}</div>
-                        <div style={{ fontSize: 11, color: "#3d6878", letterSpacing: 0.3 }}>{shark?"🦈":"🎣"} {fish?.name} · {entry.location} · {entry.date}</div>
+                        <div style={{ fontSize: 11, color: "#3d6878", letterSpacing: 0.3 }}>{shark?"🦈":"🎣"} {fish?.name} · {entry.date}</div>
                         <div style={{ height: 2, borderRadius: 2, marginTop: 6, background: `linear-gradient(90deg,${shark?"#a03030":"#1a7ea0"} ${Math.min(score,100)}%,rgba(25,65,95,.3) ${Math.min(score,100)}%)` }} />
                       </div>
                       <div style={{ marginLeft: "auto", textAlign: "right", flexShrink: 0 }}>
                         <div style={{ fontSize: 20, fontWeight: 700, color: shark?SHARK:BLUE }}>{entry.measurement} cm</div>
-                        <div style={{ fontSize: 10, color: DIM, letterSpacing: 1 }}>{score}% of record</div>
                       </div>
                     </div>
                   </div>
@@ -434,13 +364,9 @@ export default function App() {
 
             <div style={card}>
               <div style={{ fontSize: 10, letterSpacing: 4, textTransform: "uppercase", color: DIM, marginBottom: 16 }}>Your Details</div>
-              <div style={{ marginBottom: 16 }}>
+              <div>
                 <label style={lbl}>Angler Name *</label>
                 <input style={inp} placeholder="Your name" value={form.angler} onChange={e => setForm({...form,angler:e.target.value})} />
-              </div>
-              <div>
-                <label style={lbl}>Location (optional)</label>
-                <input style={inp} placeholder="e.g. Jeffreys Bay, Port Alfred, Mazeppa Bay…" value={form.location} onChange={e => setForm({...form,location:e.target.value})} />
               </div>
             </div>
 
@@ -533,14 +459,14 @@ export default function App() {
                 </div>
                 <div style={divider} />
                 <div style={{ display: "flex", justifyContent: "center", gap: 36, marginBottom: 22 }}>
-                  {[{v:`${submitted.entry.measurement} cm`,l:"Length"},{v:`${score}%`,l:"Of Record"},{v:`#${submitted.rank}`,l:"Rank"}].map(s=>(
+                  {[{v:`${submitted.entry.measurement} cm`,l:"Length"},{v:`#${submitted.rank}`,l:"Rank"}].map(s=>(
                     <div key={s.l}>
                       <div style={{ fontSize: 26, fontWeight: 700, color: BLUE }}>{s.v}</div>
                       <div style={{ fontSize: 9, letterSpacing: 2.5, color: DIM, textTransform: "uppercase", marginTop: 3 }}>{s.l}</div>
                     </div>
                   ))}
                 </div>
-                <div style={{ color: DIM, fontSize: 12, marginBottom: 24 }}>{fish?.name} · {submitted.entry.location} · {submitted.entry.date}</div>
+                <div style={{ color: DIM, fontSize: 12, marginBottom: 24 }}>{fish?.name} · {submitted.entry.date}</div>
                 <div style={{ display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap" }}>
                   <button onClick={() => setSpeciesModal(fish)} style={{ padding: "10px 20px", background: "transparent", border: `1px solid ${shark?"#e05a5a":"#2a6a8a"}`, borderRadius: 4, color: shark?SHARK:BLUE, fontSize: 11, letterSpacing: 2, textTransform: "uppercase", fontFamily: "Georgia,serif", cursor: "pointer" }}>📷 View Species</button>
                   <button onClick={() => { setView("leaderboard"); setFilterCat("all"); setFilterFish("all"); }} style={{ padding: "10px 20px", background: "transparent", border: `1px solid ${BLUE}`, borderRadius: 4, color: BLUE, fontSize: 11, letterSpacing: 2, textTransform: "uppercase", fontFamily: "Georgia,serif", cursor: "pointer" }}>Leaderboard</button>
